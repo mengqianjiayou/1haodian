@@ -1,0 +1,1617 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.clear {
+    zoom: 1;
+}
+body {
+    font: 12px Arial, Helvetica, sans-serif;
+}
+.clear:after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+}
+.main {
+    width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    width: 100%;
+    height: 35px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #dbdbdb;
+}
+.header .headerLeft .login {
+    float: left;
+    width: 103px;
+    height: 37px;
+    border: 1px solid #f0f0f0;
+    text-align: center;
+    line-height: 37px;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+}
+.header .login .icon {
+    position: absolute;
+    top: 32px;
+    left: 26px;
+    width: 52px;
+    height: 8px;
+    background: url("../images/indexhead_sprite_new.png") no-repeat -100px -70px;
+}
+.header .login a:hover {
+    color: #ff6600;
+}
+.header .login .headleft-list {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: -1px;
+    width: 309px;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-top: none;
+    z-index: 3;
+}
+.header .headleft-list .heleftlist-top {
+    height: 89px;
+    border-bottom: 1px solid #e9e0db;
+}
+.header .heleftlist-top .headphoto {
+    float: left;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    overflow: hidden;
+    background: url("../images/indexhead_sprite_new.png") no-repeat -230px -30px;
+    margin: 12px 10px;
+}
+.header .heleftlist-top .myshop {
+    float: left;
+    width: 144px;
+    text-align: center;
+}
+.header .myshop .vip {
+    display: block;
+    width: 142px;
+    height: 26px;
+    border-radius: 13px;
+    border: 1px solid #ffb4b4;
+    line-height: 26px;
+    color: #ff8486;
+    margin-top: 17px;
+}
+.header .myshop .vip:hover {
+    border-color: #e60012;
+    color: #e60012;
+}
+.header .myshop .join {
+    color: #000;
+    line-height: 14px;
+}
+.header .myshop .join b {
+    vertical-align: middle;
+    display: inline-block;
+    width: 12px;
+    height: 14px;
+    background: url("../images/indexhead_sprite_new.png") no-repeat -450px 0;
+}
+.header .myshop .join:hover {
+    color: #cc0000;
+}
+.header .heleftlist-bom a {
+    float: left;
+    width: 154px;
+    height: 55px;
+    box-sizing: border-box;
+    border-right: 1px dashed #e6e6e6;
+    border-top: 2px solid #f7eee9;
+    background-color: #fff5f0;
+    line-height: 55px;
+    text-align: center;
+    color: #000;
+}
+.header .heleftlist-bom a:hover {
+    background-color: #ffebe2;
+    color: #000;
+}
+.header .headerLeft .adress {
+    float: left;
+    padding-left: 5px;
+    width: 140px;
+    height: 35px;
+    line-height: 35px;
+    position: relative;
+}
+.header .adress .addressdef {
+    display: inline-block;
+    position: relative;
+    left: 3px;
+    width: 58px;
+    height: 19px;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+    vertical-align: middle;
+    z-index: 3;
+}
+.header .addressdef>i {
+    position: absolute;
+    font-style: normal;
+    color: #000;
+    font-weight: 900;
+    top: 0;
+    left: 5px;
+    height: 100%;
+    line-height: 19px;
+}
+.header .addressdef span {
+    width: 14px;
+    height: 18px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../images/indexhead_sprite_new.png") no-repeat -315px 0;
+}
+.header .adress>i {
+    display: inline-block;
+    width: 38px;
+    height: 19px;
+    background: url("../images/indexhead_sprite_new.png") no-repeat -269px 0;
+    vertical-align: middle;
+}
+.header .adress .addressList {
+    display: none;
+    position: absolute;
+    left: 47px;
+    top: 27px;
+    width: 560px;
+    padding: 16px 30px;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    box-shadow: 0 4px 4px #dbdbdb;
+    z-index: 5;
+}
+.header .addressList .addresstop-1 {
+    height: 38px;
+    line-height: 38px;
+    color: #999;
+}
+.header .addressList .addresstop-1 a {
+    display: inline-block;
+    color: #e50012;
+    height: 18px;
+    background-color: #fce5e7;
+    vertical-align: middle;
+    line-height: 18px;
+}
+.header .addresstop-1 .icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 12px;
+    height: 18px;
+    background: url("../images/indexhead_sprite_new.png") no-repeat -300px -200px;
+}
+.header .addresstop-2 .icon {
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    width: 12px;
+    height: 18px;
+    background: url("../images/indexhead_sprite_new.png") no-repeat -300px -220px;
+}
+.header .addresstop-2 span {
+    float: left;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+.header .addressList .addresstop-2 {
+    color: #999;
+    height: 44px;
+    line-height: 22px;
+    padding: 8px 0;
+    border-bottom: 1px dashed #e0e0e0;
+}
+.header .addresstop-2>ul {
+    float: left;
+    width: 432px;
+    height: 100%;
+}
+.header .addresstop-2 li {
+    float: left;
+    display: inline-block;
+    width: 54px;
+    height: 22px;
+    line-height: 22px;
+    cursor: pointer;
+}
+.header .addressList .addressbom p {
+    line-height: 36px;
+    height: 36px;
+    color: #b0b0b0;
+    font-weight: 900;
+}
+.header .addressbom li {
+    float: left;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    background-color: #eee;
+    color: #c0c2bc;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+.header .addressbom .ad-wrap {
+    height: 223px;
+    margin-top: 6px;
+    overflow: scroll;
+    overflow-x: hidden;
+    transition: all .5s;
+}
+.addressbom .ad-wrap .inner {
+    width: 100%;
+    position: relative;
+}
+.addressbom .ad-wrap .inner>div {
+    width: 100%;
+    overflow: hidden;
+}
+.addressbom .ad-wrap .inner span {
+    float: left;
+    width: 30px;
+    color: #999;
+}
+.addressbom .inner .address-right {
+    float: left;
+    width: 500px;
+}
+.addressbom .inner .address-right a {
+    color: #333;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    margin-right: 20px;
+}
+.header .headerRight {
+    float: right;
+    height: 35px;
+}
+.header .headerRight .site,.header .headerRight .attent {
+    float: left;
+}
+.header .site li {
+    float: left;
+    height: 12px;
+    line-height: 12px;
+    vertical-align: middle;
+    margin-top: 12px;
+    padding: 4px 0 4px 8px;
+    color: #666;
+    position: relative;
+    z-index: 3;
+    border: 1px solid transparent;
+}
+.header .site li:after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    z-index: 4;
+}
+.header .site li a {
+    color: #666;
+}
+.site li>.icon {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    position: relative;
+    right: -1px;
+    padding-right: 9px;
+    background: url("../images/indexhead_sprite_new.png") no-repeat;
+    background-position: -190px 0;
+    vertical-align: middle;
+    border-right: 1px solid #cccccc;
+}
+.site li>i.phone {
+    width: 10px;
+    height: 16px;
+    background: url("../images/indexhead_sprite_new.png") no-repeat;
+    background-position: -375px 0;
+    vertical-align: middle;
+    display: inline-block;
+}
+.header .site .rightList.normal {
+    display: none;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    left: -1px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #fff;
+    line-height: 24px;
+}
+.header .rightList>a {
+    display: block;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 8px;
+}
+.header .site a:hover {
+    color: #e60012;
+}
+.header .site .rightList.addwidth {
+    display: none;
+    width: 300px;
+    height: 140px;
+    right: -1px;
+    top: 20px;
+    position: absolute;
+    z-index: 2;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    line-height: 24px;
+}
+.site .addwidth .phone-left {
+    width: 80px;
+    height: 80px;
+    margin-top: 35px;
+    margin-left: 35px;
+    float: left;
+}
+.site .addwidth .phone-left img {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.site .addwidth .phone-right {
+    float: left;
+    margin-top: 35px;
+    margin-left: 28px;
+}
+.site .addwidth .phone-right p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #666;
+}
+.site .addwidth .phone-right a {
+    color: #0066cc;
+}
+.site .phone-right a:hover {
+    color: #e60012;
+}
+.site .phone-right a.icon {
+    display: inline-block;
+    background: url("../images/tubiao.png") no-repeat;
+    width: 34px;
+    height: 34px;
+    margin-right: 13px;
+}
+.site .phone-right a.mobile {
+    background-position-x: -34px;
+}
+.site .phone-right a.android {
+    background-position-x: -68px;
+}
+.site .phone-right a.icon:hover {
+    background-position-y: -34px;
+}
+.header .site .rightList.addwidth2 {
+    display: none;
+    width: 210px;
+    right: -1px;
+    top: 20px;
+    padding: 0 12px;
+    position: absolute;
+    z-index: 2;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    line-height: 28px;
+}
+.header .rightList.addwidth2>div {
+    overflow: hidden;
+}
+.header .rightList.addwidth2 .hasborder {
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+}
+.header .rightList.addwidth2 a {
+    float: left;
+    width: 48px;
+    padding: 0 11px;
+}
+.header .headerRight .attent {
+    margin-top: 12px;
+    margin-left: 7px;
+    color: #666;
+    position: relative;
+}
+.header .attent .icon {
+    display: inline-block;
+    width: 18px;
+    height: 16px;
+    background: url("../images/indexhead_sprite_new.png") no-repeat;
+    background-position: -350px 0;
+}
+.header .attent .icon.wechat {
+    background-position: -424px 0;
+    margin-left: 10px;
+}
+.header .attent .store {
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 4;
+    top: 23px;
+    width: 90px;
+    padding: 0 21px;
+    line-height: 20px;
+    color: #666;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.header .attent img {
+    width: 90px;
+    height: 90px;
+    display: block;
+    margin-bottom: 16px;  }
+.header .store .point {
+    display: inline-block;
+    width: 6px;
+    height: 4px;
+    background: url("../images/indexhead_sprite_new.png") no-repeat -480px 0;
+    position: absolute;
+    top: -3px;
+    right: 5px;
+}
+/*logo导航部分*/
+.logonav {
+    height: 172px;
+}
+.logonav .main {
+    position: relative;
+}
+.logonav .banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 60px;
+}
+.logonav .logo {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 210px;
+    height: 111px;
+    background: url("../images/logo.png") no-repeat center;
+}
+.logonav .serch {
+    position: absolute;
+    top: 80px;
+    left: 324px;
+}
+.logonav .serch .serchform {
+    width: 524px;
+    height: 28px;
+    border: 2px solid #ff3c3c;
+    position: absolute;
+}
+.logonav .serchform .serchrange {
+    width: 53px;
+    height: 28px;
+    padding-left: 15px;
+    border: 1px solid #e1e1e1;
+    border-top: none;
+    border-bottom-width: 0;
+    background-color: #f8f8f8;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    overflow: hidden;
+}
+.logonav .serchrange>a {
+    display: block;
+    width: 100%;
+    line-height: 28px;
+    color: #333;
+}
+.logonav .serchrange>a:hover {
+    color: #cc0000;
+}
+.logonav .serchrange>i {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 7px;
+    height: 7px;
+    background: url("../images/indexhead_sprite_new.png") no-repeat -330px -70px;
+    transition: all .3s;
+}
+.logonav .serchform .keywords {
+    width: 348px;
+    height: 28px;
+    line-height: 28px;
+    position: absolute;
+    top: 0;
+    left: 70px;
+    border: none;
+    outline: none;
+    padding-left: 8px;
+    color: #a9a9a9;
+}
+.logonav .serchform>a {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 98px;
+    height: 28px;
+    background-color: #ff3c3c;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 28px;
+    font-weight: 900;
+}
+.logonav .serch .hotserch {
+    position: absolute;
+    left: 0;
+    top: 32px;
+    width: 524px;
+    overflow: hidden;
+}
+.logonav .serch .hotserch>a {
+    float: left;
+    display: inline-block;
+    color: #999;
+    margin-right: 11px;
+    height: 24px;
+    line-height: 24px;
+}
+.logonav .hotserch>a:hover {
+    color: #e60012;
+}
+.logonav .serchform .serchlist {
+    display: none;
+    width: 455px;
+    height: 264px;
+    position: absolute;
+    z-index: 2;
+    right: -2px;
+    top: 30px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+.serchform .serchlist .left {
+    float: left;
+    width: 250px;
+    height: 100%;
+    border-right: 1px solid #e5e5e5;
+    position: relative;
+}
+.serchform .serchlist p {
+    padding: 10px 25px;
+    color: #999;
+}
+.serchlist .left .clearhistioy {
+    position: absolute;
+    top: 10px;
+    right: 7px;
+    color: #666;
+}
+.serchlist .left .clearhistioy:hover {
+    color: #e60012;
+}
+.serchlist .clearhistioy i {
+    display: inline-block;
+    width: 11px;
+    height: 16px;
+    background: url("../images/indexhead_sprite.png") no-repeat -289px -550px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.serchform .serchlist .right {
+    float: left;
+    width: 195px;
+    padding-left: 9px;
+}
+.serchform .right a {
+    display: inline-block;
+    padding: 0 10px;
+    border: 1px solid #e1e1e1;
+    color: #333;
+    margin: 6px 4px;
+    height: 22px;
+    line-height: 22px;
+    transition: all .4s;
+}
+.serchform .right a:hover {
+    border-color: #e60012;
+    color: #e60012;
+}
+.logonav .shoppingCart {
+    position: absolute;
+    right: 0;
+    top: 75px;
+    width: 88px;
+    height: 43px;
+    background-color: #f7f7f7;
+    line-height: 42px;
+    text-align: center;
+    color: #666;
+    border: 1px solid #e5e5e5;
+    cursor: pointer;
+    z-index: 3;
+}
+.logonav .shoppingCart .line {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 44px;
+    z-index: 4;
+}
+.logonav .shoppingCart>i {
+    display: inline-block;
+    width: 19px;
+    height: 18px;
+    background: url("../images/indexhead_sprite_new.png") no-repeat -100px -85px;
+    vertical-align: middle;
+}
+.logonav .shoppingCart .cartList {
+    width: 358px;
+    height: 266px;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    position: absolute;
+    right: -1px;
+    top: 43px;
+    box-shadow: 0 3px 3px #ccc;
+    display: none;
+    z-index: 2;
+}
+.logonav .shoppingCart .cartList i {
+    display: inline-block;
+    width: 118px;
+    height: 77px;
+    background: url("../images/indexhead_sprite_new.png") no-repeat -50px -160px;
+    margin-top: 52px;
+}
+/*分类*/
+.menu .main {
+    position: relative;
+}
+.menu .menu-head {
+    height: 34px;
+    line-height: 34px;
+    overflow: hidden;
+    font-weight: 900;
+}
+.menu .menu-head a.menu-head-left {
+    float: left;
+    display: inline-block;
+    width: 170px;
+    height: 100%;
+    padding-left: 40px;
+    color: #fff;
+    background-color: #ff3c3c;
+    position: relative;
+}
+.menu a.menu-head-left i {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 9px;
+    height: 7px;
+    background: url("../images/indexhead_sprite_new.png") no-repeat -210px -104px;
+}
+.menu-head-mid {
+    float: left;
+    padding-left: 13px;
+}
+.menu .menu-head-mid a {
+    display: inline-block;
+    color: #333;
+    margin-right: 31px;
+}
+.menu .menu-head-mid a.cur {
+    color: #ff3c3c;
+}
+.menu .menu-head-mid a:hover {
+    color: #ff3c3c;
+}
+.menu a.menu-head-right {
+    float: right;
+    color: #968d8b;
+    position: relative;
+    text-align: right;
+    width: 112px;
+    font-weight: 400;
+}
+.menu a.menu-head-right i {
+    display: inline-block;
+    width: 12px;
+    height: 17px;
+    background: url("../images/tubiao.png") no-repeat 0 -70px;
+    position: absolute;
+    left: 0;
+    top: 9px;
+}
+.menu .wrap {
+    height: 398px;
+    width: 100%;
+    border-top: 2px solid #ff3c3c;
+    position: relative;
+    z-index: 0;
+}
+.menu .wrap .inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.menu .inner li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    opacity: 0;
+}
+.menu .wrap .main {
+    position: relative;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.menu .inner li a {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 210px;
+    width: 750px;
+    height: 100%;
+    margin: 0 auto;
+}
+.menu .inner li img {
+    width: 100%;
+    height: 100%;
+}
+.menu .wrap .focus {
+    position: absolute;
+    z-index: 2;
+    left: 210px;
+    top: 366px;
+    width: 750px;
+    overflow: hidden;
+    text-align: center;
+}
+.menu .focus li {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #ccc;
+    margin: 0 6px;
+}
+.menu .focus li.cur {
+    background-color: #ff3c3c;
+}
+.menu .wrap .left,.menu .wrap .right {
+    display: none;
+    position: absolute;
+    width: 45px;
+    height: 80px;
+    margin-top: -40px;
+    top: 50%;
+    background: url("../images/index_sprite_new.png") no-repeat;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, .3);
+}
+.menu .wrap .left {
+    left: 210px;
+}
+.menu .wrap .left:hover {
+    background-color: rgba(0, 0, 0, .5);
+    background-position: 0 0;
+}
+.menu .wrap .right:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+.menu .wrap .right {
+    left: 915px;
+    background-position: -80px 0;
+}
+.menu .menu-list {
+    position: absolute;
+    top: 36px;
+    z-index: 2;
+    left: 0;
+    width: 210px;
+    background: #c23131;
+    height: 395px;
+    border-top: 3px solid #b01d1d;
+}
+.menu .menu-list p {
+    margin-left: 12px;
+    height: 33px;
+    line-height: 32px;
+}
+.menu .menu-list p>a {
+    color: #fff;
+}
+.menu .menu-list .icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url("../images/tubiao.png") no-repeat;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+.menu .menu-list .icon1 {
+    background-position: -108px 0;
+}
+.menu .menu-list .icon2 {
+    background-position: -126px 0;
+}
+.menu .menu-list .icon3 {
+    background-position: -144px 0;
+}
+.menu .menu-list .icon4 {
+    background-position: -162px 0;
+}
+.menu .menu-list .icon5 {
+    background-position: -180px 0;
+}
+.menu .menu-list .icon6 {
+    background-position: -198px 0;
+}
+.menu .menu-list .icon7 {
+    background-position: -216px 0;
+}
+.menu .menu-list .icon8 {
+    background-position: -234px 0;
+}
+.menu .menu-list .icon9 {
+    background-position: -252px 0;
+}
+.menu .menu-list .icon10 {
+    background-position: -270px 0;
+}
+.menu .menu-list .icon11 {
+    background-position: -288px 0;
+}
+.menu .menu-list .icon12 {
+    background-position: -296px 0;
+}
+.menu .menu-list-hid {
+    display: none;
+    position: absolute;
+    left: 210px;
+    top: 36px;
+    right: 0;
+    height: 398px;
+    background-color: #fff;
+    z-index: 3;
+}
+.menu .menu-list-hid>li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 5;
+    display: none;
+}
+.menu .menu-list-hid .list-hid1,.menu .menu-list-hid .list-hid2 {
+    float: left;
+}
+.menu .menu-list-hid .list-hid1 {
+    padding-left: 20px;
+    width: 230px;
+    height: 380px;
+    margin-top: 10px;
+    margin-left: -1px;
+    overflow: hidden;
+}
+.menu .menu-list-hid .list-hid2 {
+    width: 240px;
+    height: 100%;
+    border-left: 1px solid #ddd;
+}
+.menu .list-hid1 dl {
+    margin-bottom: 19px;
+    overflow: hidden;
+}
+.menu .list-hid1 dt {
+    height: 32px;
+    line-height: 32px;
+    font-weight: 900;
+    padding-left: 4px;
+}
+.list-hid1 dt a {
+    color: #333;
+}
+.list-hid1 dt em {
+    margin: 0 3px;
+}
+.menu .list-hid1 a.cur {
+    color: #e60012;
+}
+.menu .list-hid1 dd a {
+    float: left;
+    display: inline-block;
+    height: 14px;
+    border-left: 1px solid #ddd;
+    line-height: 14px;
+    padding: 0 5px;
+    margin: 5px 0 5px -1px;
+    color: #333;
+}
+.menu .list-hid2>div {
+    width: 100%;
+    height: 133px;
+    border-bottom: 1px solid #ddd;
+}
+.menu .list-hid2 div.cur {
+    height: 130px;
+    border: none;
+}
+.menu .list-hid2 .hid2-left {
+    float: left;
+    width: 120px;
+    text-align: center;
+    padding-top: 20px;
+    line-height: 20px;
+}
+.menu .hid2-left h3 a {
+    color: #333;
+}
+.menu .hid2-left p a {
+    color: #666;
+}
+.menu .hid2-right {
+    float: left;
+    width: 120px;
+}
+.menu .hid2-right a {
+    display: block;
+    width: 105px;
+    height: 105px;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+.menu .hid2-right img {
+    width: 100%;
+    height: 100%;
+    border: none;
+    vertical-align: top;
+}
+.menu .menu-right {
+    position: absolute;
+    top: 36px;
+    z-index: 2;
+    right: 0;
+    height: 397px;
+    width: 240px;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    overflow: hidden;
+}
+.menu .menu-right h3 {
+    line-height: 24px;
+    padding-left: 13px;
+    color: #333;
+}
+.menu .menu-right .right-mid {
+    width: 216px;
+    padding-top: 6px;
+    margin: 4px 12px 15px 12px;
+    border-top: 1px dashed #ccc;
+}
+.menu-right .right-mid a {
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    color: #333;}
+.menu-right .right-mid a.cur {
+    color: #e60012;}
+.menu .menu-right .right-bom {
+    width: 100%;
+    overflow: hidden;
+    border-top: 1px solid #eee;}
+.menu-right .right-bom a {
+    display: inline-block;
+    float: left;
+    width: 79px;
+    height: 80px;
+    margin-left: -1px;
+    border-left: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    color: #666;
+}
+.menu-right .right-bom .icon {
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: 13px 24px;
+    background: url("../images/tubiao.png") no-repeat 0 -90px;
+}
+.menu-right .right-bom .icon.icon1 {
+    background-position: 0 -120px;
+}
+.menu-right .right-bom .icon.icon2 {
+    background-position: 0 -150px;
+}
+.menu-right .right-bom .icon.icon3 {
+    background-position: 0 -180px;
+}
+.menu-right .right-bom .icon.icon4 {
+    background-position: 0 -210px;
+}
+.menu-right .right-bom .icon.icon5 {
+    background-position: 0 -240px;
+}
+.menu-right a>span:hover {
+    color: #e60012;
+}
+.menu .menu-right .right-bom-hid {
+    position: absolute;
+    left: 0;
+    z-index: 6;
+    width: 100%;
+    bottom: -185px;
+    box-sizing: border-box;
+    background-color: #fff;
+    transition: all .4s;
+}
+.menu-right .right-bom-hid .bom-hid-title {
+    height: 24px;
+    width: 100%;
+    overflow: hidden;
+}
+.right-bom-hid .bom-hid-title li {
+    float: left;
+    width: 78px;
+    border: 1px solid #eee;
+    text-align: center;
+    line-height: 24px;
+    position: relative;
+    border-bottom:none;
+}
+.right-bom-hid .bom-hid-title a {
+    color: #666;
+}
+.right-bom-hid .bom-hid-title a:hover {
+    color: #e60012;
+}
+.menu-right .bom-content {
+    position: relative;
+    top: 1px;
+    width: 238px;
+    height: 159px;
+    border: 1px solid #e60012;
+}
+.menu-right .bom-content>span{
+    display: block;
+    width: 79px;
+    height: 3px;
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    top: -1px;
+    z-index: 7
+}
+.menu-right .bom-content>li {
+    position: absolute;
+    left: 15px;
+    top: 0;
+    background: #fff;
+}
+.menu-right .bom-content .cur1>a {
+    display: block;
+    position: absolute;
+    left: 16px;
+    bottom: 11px;
+    width: 69px;
+    height: 26px;
+    background-color: #ff5c4d;
+    border: 1px solid #ff4141;
+    line-height: 26px;
+    color: #fff;
+    text-align: center;
+}
+.right-bom-hid .cur1>div a {
+    float: left;
+    display: inline-block;
+    line-height: 34px;
+    margin-right: 20px;
+    color: #666;
+}
+.right-bom-hid .cur1>div a:hover {
+    color: #e60012;
+}
+.right-bom-hid .bom-select {
+    width: 155px;
+    height: 125px;
+    color: #666;
+    line-height: 26px;
+    position: relative;
+}
+.right-bom-hid .bom-select li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.right-bom-hid .bom-select .open{
+    display: block;
+}
+.right-bom-hid .bom-select input {
+    width: 112px;
+    height: 23px;
+    border: 1px solid #ccc;
+    color: #aaa;
+}
+.right-bom-hid .bom-select select {
+    width: 114px;
+    height: 23px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.right-bom-hid .bom-select .half {
+    width: 57px;
+}
+.right-bom-hid li .title {
+    color: #333;
+    line-height: 24px;
+    margin-top: 6px;
+    display: inline-block;
+}
+.right-bom-hid li .title:hover {
+    color: #e60012;
+}
+.right-bom-hid li .img {
+    display: block;
+    margin-top:5px;
+    width: 200px;
+    height: 114px;
+}
+.right-bom-hid .icon{
+    position: absolute;
+    width:10px;
+    height:10px;
+    background: url("../images/indexhead_sprite_new.png") no-repeat -160px -105px;
+    top:30px;
+    right:15px;
+    z-index:10;
+}
+
+/*活动专属*/
+.active{
+    width:100%;
+    height:260px;
+    padding-top:18px;
+    background: #f9f9f9;
+}
+.active .main{
+    height:260px;
+    position: relative;
+    overflow: hidden;
+    background: -webkit-linear-gradient(top, #fff 60%,#f9f9f9 100%);
+}
+.active .main li{
+    float: left;
+}
+.active .focus{
+    position: absolute;
+    left:0;
+    top:0;
+}
+.active .focus li{
+    width:400px;
+    height:3px;
+    background: #e6dcdc;
+    margin-right:2px;
+}
+.active .focus li.short{
+    width:396px;
+    margin:0;
+}
+.active .wrap{
+    width:1044px;
+    height:198px;
+    position: absolute;
+    top:62px;
+    left:78px;
+    overflow: hidden;
+}
+.active .wrap .inner{
+    width:4177px;
+    position: absolute;
+    left:0;
+    top:0;
+}
+.active .ban li{
+    width:132px;
+    margin:0 21px;
+    text-align: center;
+    line-height:28px;
+}
+.active .ban div{
+    width:130px;
+    height:130px;
+    border:1px solid #e4e1e1;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+.active .ban img{
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left:-50px;
+    margin-top:-50px;
+    width:100px;
+    height:100px;
+    vertical-align: middle;
+    transition: all .3s;
+}
+.active a span{
+    color: #fb6c68;
+}
+.active a {
+    color:#333;
+    font-size: 16px;
+}
+.active .yours{
+    width:134px;
+    height:18px;
+    position: absolute;
+    left:50%;
+    margin-left:-67px;
+    top:18px;
+    background: url("../images/index_sprite_new.png") no-repeat 0 -160px;
+}
+.active .left,.active .right{
+    position: absolute;
+    top:50px;
+    padding:66px 12px;
+}
+.active .left{
+    left:20px;
+}
+.active .right{
+    right:20px;
+}
+.active .left i,.active .right i{
+    display: block;
+    width: 18px;
+    height:30px;
+    background: url("../images/index_sprite_new.png") no-repeat;
+    background-position-y: -120px;
+}
+.active .left i{
+    background-position-x: 0;
+}
+.active .right i{
+    background-position-x: -30px;
+}
+.group{
+    width:100%;
+    height:400px;
+    padding-top:20px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    padding-bottom:20px;
+}
+.group .main{
+    height:100%;
+    background-color: #fff;
+}
+.group li{
+    float:left;
+}
+.group .sale{
+    width:240px;
+    height:400px;
+}
+.group .sale img{
+    width:100%;
+    height:100%;
+}
+.group .saleList1{
+    margin-left:-1px;
+    width:480px;
+    height:400px;
+    background-color: #f2f2f2;
+}
+.group .saleList1 li{
+    text-align: center;
+    width:239px;
+    margin-left:1px;
+    margin-bottom:1px;
+    background-color: #fff;
+    height:200px;
+}
+.group .saleList2{
+    width:239px;
+    height:400px;
+    background-color: #f2f2f2;
+}
+.group .saleList2 li{
+    text-align: center;
+    width:100%;
+    height:200px;
+    margin-bottom:1px;
+    background-color: #fff;
+}
+.group h3 a{
+    display: inline-block;
+    color:#333;
+    margin-top:13px;
+    line-height:26px;
+}
+.group p a{
+    display: inline-block;
+    color:#666;
+    line-height:22px;
+    margin-bottom:8px;
+}
+.group li .move{
+    position: relative;
+    display: block;
+    width:160px;
+    height:120px;
+    left:50%;
+    margin-left:-80px;
+    transition: all .2s;
+}
+.theme{
+    background: #f9f9f9;
+}
+.theme .themelist{
+    margin-bottom:20px;
+    height:394px;
+    width:100%;
+}
+.theme .themelist header{
+    height:32px;
+    width:100%;
+    line-height:32px;
+}
+.themelist header h3{
+    float:left;
+    color:#ff4500;
+    margin-right:14px;
+}
+.themelist header ul{
+    float:right;
+    margin-left:-1px;
+
+}
+.themelist header li{
+    float:left;
+}
+.themelist header li a{
+    color:#666;
+    margin:0 7px 0 9px;
+}
+.themelist header li span{
+    display: inline-block;
+    width:1px;
+    height:11px;
+    background-color: #b199b1;
+}
+.themelist header>a{
+    float:left;
+    position: relative;
+    color:#666;
+    padding:0 10px;
+    margin-left:4px;
+    background: #fff;
+    transition: all 0.5s;
+    line-height:24px;
+    border:1px solid #ddd;
+}
+.themelist a>em{
+    position: absolute;
+    left:-5px;
+    top:7px;
+    width:5px;
+    height:9px;
+    background: url("../images/index_sprite_new.png") no-repeat;
+    background-position: -140px 0;
+}
+.themelist .themedir{
+    width:100%;
+    border-top:2px solid #ff4500;
+    background: #fff;
+    height:360px;
+}
+.themelist .themedir .dirleft{
+    width:179px;
+    height:100%;
+    border-right:1px solid #f4f4f4;
+    float:left;
+    padding:0 15px;
+}
+.themelist .dirleft .dirleftlink{
+    margin-left:-10px;
+    margin-bottom:10px;
+}
+.themelist .dirleft li{
+    float:left;
+    line-height:32px;
+    width:79px;
+    padding-left:5px;
+    border-bottom:1px dashed #eee;
+    margin-left:10px;
+}
+.themelist .dirleft a {
+    color:#333;
+}
+.themelist .dirleft>a{
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    line-height:24px;
+}
+.themelist .dirleft h3{
+    color:#ff4500;
+}
+.themelist .dirleft p{
+    color:#999;
+}
+.themelist .dirleft img{
+    width:190px;
+    height:180px;
+}
+.themelist .wrap{
+    float:left;
+    width:329px;
+    height:100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+.themelist .wrap .inner{
+    width:1316px;
+    height:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index:1;
+}
+.themelist .wrap .inner img{
+    float:left;
+    width:329px;
+    height:100%;
+}
+.themelist img{
+    display: block;
+}
+.themelist .wrap .focus{
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    z-index:5;
+    margin-top:331px;
+    height:5px;
+    line-height:5px;
+}
+.themelist .wrap .focus li{
+    display: inline-block;
+    width:30px;
+    height:4px;
+    position: relative;
+    background: #ddd;
+    margin:0 3px;
+    z-index: 6;
+}
+.themelist .wrap .focus li.cur{
+    height:5px;
+}
+.themelist .focus li span{
+    position: absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:0;
+    background-color:#ff3c3c;
+    z-index: 7;
+}
+.themelist .focus li.cur span{
+    width:100%;
+    transition: all 2s;
+}
+.themelist .dirright ul{
+    float:left;
+    width:661px;
+    height:100%;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
+}
+.themelist .dirright li{
+    -webkit-box-flex:1;
+    -webkit-flex:1;
+    flex:1;
+    text-align: center;
+    border-left:1px solid #f4f4f4;
+    height:360px;
+}
+.themelist .dirright .top{
+    border-bottom:1px solid #f4f4f4;
+}
+.themelist .dirright li:nth-child(1),.themelist .dirright li:nth-child(3){
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.themelist .dirright li>div{
+    -webkit-box-flex:1;
+    flex:1;
+}
+.themelist .dirright li a{
+    display: block;
+    line-height:22px;
+    padding-top:15px;
+    color:#000;
+}
+.themelist .dirright a>span{
+    color:#999;
+}
+.themelist .dirright div img{
+    width:190px;
+    height:110px;
+    display: block;
+    margin:0 auto;
+}
+.themelist .dirright li:nth-child(2) img{
+    width:190px;
+    height:290px;
+    display: block;
+    margin:0 auto;
+}
+@keyframes changes {
+    0%{
+        opacity: .6;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.themelist .dirright a:hover img{
+    animation: changes .5s;
+}
